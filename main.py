@@ -14,7 +14,7 @@ nltk.download('tagsets')
 import re
 import PyPDF2 
 # import fitz
-from gingerit.gingerit import GingerIt
+# from gingerit.gingerit import GingerIt
 import streamlit as st
 
 #Text to speech function
@@ -40,7 +40,7 @@ def TextToSpeechPdf(doc):
 #Handles removal of redundant/repeat words
 def tokenfix(tok):
         i = 0
-        parser = GingerIt()
+        # parser = GingerIt()
         tok2 = tok
         tok3 = tok2
         for i in range(len(tok)-1):
@@ -142,15 +142,15 @@ def Tokenizer(txt):
         #The gingerIt module is called and the result variable is passed into the parser.parse function
         #to fix any additional misspelt words, grammatical errors, redundant punctuation that wasnt originally 
         #specified within the IF Block of code aformentioned earlier in the tokenizer function
-    parser = GingerIt()
-        #result is passed into another variable after the fixes to be outputted
-    val = parser.parse(result)
-    print(val)
-    print(val["result"])
-    #specific result output is captured passed into a second variable
-    val2 = val["result"]
+#     parser = GingerIt()
+#         #result is passed into another variable after the fixes to be outputted
+#     val = parser.parse(result)
+#     print(val)
+#     print(val["result"])
+#     #specific result output is captured passed into a second variable
+#     val2 = val["result"]
     #final corrected text is returned and passed to its appropriate text to speech engine. (whether pdf, txt, or plain text)
-    return val2
+    return result
 
 
 
