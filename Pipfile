@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+numpy = "*"
+nltk = "*"
+pyttsx3 = "*"
+tika = "*"
+fitz = "*"
+pypdf2 = "*"
+gingerit = "*"
+streamlit = "*"
+regex = "*"
+tk = "*"
+kivy = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
