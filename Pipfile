@@ -15,6 +15,7 @@ streamlit = "*"
 regex = "*"
 tk = "*"
 kivy = "*"
+pymupdf = "*"
 
 [dev-packages]
 
