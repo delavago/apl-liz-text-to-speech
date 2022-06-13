@@ -30,7 +30,7 @@ def read_pdf_file():
     speech.text_to_speech(dictionary.Tokenizer(text))
 
 root = Tk()
-root.title('Text to Speech')
+root.title('APL Assignment 2')
 root.iconbitmap('logo.ico')
 root.geometry("500x500")
 
@@ -40,10 +40,10 @@ textbox.pack()
 b1 = Button(root, text = "Text to Speech", padx=5, pady=5, bg='white', fg='green', command=read_text)
 b1.pack()
 
-b2 = Button(root, text = "Open Text File", padx=5, pady=5, bg='white', fg='green', command=read_text_fille)
+b2 = Button(root, text = "Read Text/Word File", padx=5, pady=5, bg='white', fg='green', command=read_text_fille)
 b2.pack()
 
-b3 = Button(root, text = "Open PDF File", padx=5, pady=5, bg='white', fg='green', command=read_pdf_file)
+b3 = Button(root, text = "Read PDF File", padx=5, pady=5, bg='white', fg='green', command=read_pdf_file)
 b3.pack()
 
 root.mainloop()
